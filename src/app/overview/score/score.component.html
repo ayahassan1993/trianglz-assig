@@ -1,0 +1,64 @@
+<div class="sec_style">
+    <div class="row m-0">
+        <div class="col-md-6" style="border-right: 1px solid #eeeeee;">
+            <div class="sec_tit d-flex justify-content-between align-items-center mb-4">
+                <p class="fontfamily_bold m-0">Overal Score</p>
+                <a class="text_light_gray" href="#">Details <img src="../../../assets/img/arrow-right.png" alt="pic"></a>
+            </div>
+            <div class="row m-0">
+                <div class="col-sm-7">
+                    <div class="score_num">
+                        <h1 class="fontfamily_bold">7.5</h1>
+                        <p class="text_light_gray font_size_small text-center"><span style="color:#f75656">-0.5 below</span>  the Technology Benchmark</p>
+                        <div class="scor_rec">
+                            <div class="_rectangle">
+                                <span class="animated fadeInLeft" style="width: 70%;"></span>
+                            </div>
+                            <div class="score_numbers text_light_gray">
+                                <span style="left:0">0</span>
+                                <span style="left:80%">8</span>
+                                <span style="left:100%">10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 pl-5">
+                    <div class="score_item mb-3 d-flex align-items-center">
+                        <img class="mr-3" src="../../../assets/img/promoters.svg" alt="pic">
+                        <p class="fontfamily_bold font_size_small text_light_gray"><span style="display: block;color:#4ac979">49%</span>Promoters (195)</p>
+                    </div>
+                    <div class="score_item mb-3 d-flex align-items-center">
+                        <img class="mr-3" src="../../../assets/img/passive.svg" alt="pic">
+                        <p class="fontfamily_bold font_size_small text_light_gray"><span style="display: block;color:#a0aabb">28%</span>Passive (113)</p>
+                    </div>
+                    <div class="score_item d-flex align-items-center">
+                        <img class="mr-3" src="../../../assets/img/detractors.svg" alt="pic">
+                        <p class="fontfamily_bold font_size_small text_light_gray"><span style="display: block;color:#f75656">23%</span>Detractors (92))</p>
+                    </div>
+                    <p class="font_size_small text_light_gray"><span style="display: block;color:#4ac979">Good</span>
+                        In the middle range of the Technology sector</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="sec_tit d-flex justify-content-between align-items-center mb-4">
+                <p class="fontfamily_bold m-0">Score over time</p>
+                <a class="text_light_gray" href="#">Full Chart <img src="../../../assets/img/arrow-right.png" alt="pic"></a>
+            </div>
+            <div class="flex">
+                <div class="flex-item">
+                  <div style="display: block;">
+                    <canvas baseChart 
+                        [chartType]="'line'"
+                        [datasets]="lineChartData"
+                        [labels]="chartLabels"
+                        [options]="chartOptions"
+                        [legend]="barchartLend"
+                        [colors]="lineChartColors"
+                    ></canvas>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+.site-header{
+    box-shadow: 0 0 9px 0 #eeeeee;
+    .nav-logo{
+        min-width:176px ;
+        #menu-toggle{
+            padding: 0;
+            background: transparent;
+            border: 0;
+        }
+    }
+    .dropdown{
+        line-height: 0;
+        .dropdown-menu.animated{
+            animation-duration: .5s;
+        }
+    }
+    .company_info{
+        border-radius: 4px;
+        border: solid 2px #f3e6ff;
+        background:transparent;
+        padding: .5rem 2rem .5rem .5rem;
+        line-height: 0;
+        &:after{     
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+            content: url(../../assets/img/down-arrow.png);
+            border:0;
+        }
+        p{
+            line-height: 1rem;
+        }
+        small{
+            line-height: 1rem;
+        }
+    }
+    .user_info{
+        .notification{
+            position: relative;
+            padding: 0;
+            border:0;
+            box-shadow: 0;
+            background:transparent;
+            line-height: 0;
+            span{
+                background:#f75656;
+                width: 8px;
+                height: 8px;
+                border-radius:50%;
+                position: absolute;
+                top: 2px;
+                right: 1.5px;
+            }
+            &:after{
+                display: none;
+            }
+        }
+        .user_data{
+            text-align: left;
+            padding: .5rem 2.5rem .5rem .5rem;
+            line-height: 0;
+            background:transparent;
+            border:0;
+            &:after{     
+                position: absolute;
+                right:.5rem;
+                top: 50%;
+                content: url(../../assets/img/down-arrow.png);
+                border:0;
+            }
+            .user{
+                max-width: 40px;
+                border-radius: 50%;
+            }
+            .comp{
+                max-width: 20px;
+                position: absolute;
+                border-radius: 50;
+                right: -5px;
+                top: -5px;
+            }
+            p{
+                line-height: 1rem;
+            }
+            small{
+                line-height: 1rem;
+            }
+        }
+    }
+}
