@@ -1,7 +1,9 @@
 .site-header{
     box-shadow: 0 0 9px 0 #eeeeee;
     .nav-logo{
-        min-width:176px ;
+        min-width:200px ;
+        display: inline-flex;
+        justify-content: space-between;
         #menu-toggle{
             padding: 0;
             background: transparent;
@@ -12,6 +14,10 @@
         line-height: 0;
         .dropdown-menu.animated{
             animation-duration: .5s;
+            line-height: 1rem;
+            .dropdown-item{
+                padding: .5rem 1rem;
+            }
         }
     }
     .company_info{
@@ -36,54 +42,106 @@
     }
     .user_info{
         .notification{
-            position: relative;
-            padding: 0;
-            border:0;
-            box-shadow: 0;
-            background:transparent;
-            line-height: 0;
-            span{
-                background:#f75656;
-                width: 8px;
-                height: 8px;
-                border-radius:50%;
-                position: absolute;
-                top: 2px;
-                right: 1.5px;
+            .notification_button{
+                position: relative;
+                padding: 0;
+                border:0;
+                box-shadow: 0;
+                background:transparent;
+                line-height: 0;
+                span{
+                    background:#f75656;
+                    width: 8px;
+                    height: 8px;
+                    border-radius:50%;
+                    position: absolute;
+                    top: 2px;
+                    right: 1.5px;
+                }
+                &:after{
+                    display: none;
+                }
             }
-            &:after{
-                display: none;
+            .dropdown-menu{
+                padding: .5rem .5rem 0 ;
+                background:#f1f2f4;
+                border-radius:0 0 4px 4px;
+                border:0;
+                margin-top: 0;
+                .dropdown-item{
+                    background:#fff;
+                    padding: .5rem;
+                    margin-bottom: .5rem;
+                    border-radius:4px;
+                    align-items: flex-start;
+                    min-width: 250px;
+                    p{
+                        max-width: 250px;
+                        white-space: normal;
+                    }
+                    img{
+                        width: 16px;
+                        margin-right: .3rem;
+                        vertical-align: middle;
+                    }
+                }
             }
         }
         .user_data{
-            text-align: left;
-            padding: .5rem 2.5rem .5rem .5rem;
-            line-height: 0;
-            background:transparent;
-            border:0;
-            &:after{     
-                position: absolute;
-                right:.5rem;
-                top: 50%;
-                content: url(../../assets/img/down-arrow.png);
+            
+            .user_data_button{
+                text-align: left;
+                padding: .5rem 2.5rem .5rem .5rem;
+                line-height: 0;
+                background:transparent;
                 border:0;
+                &:after{     
+                    position: absolute;
+                    right:.5rem;
+                    top: 50%;
+                    content: url(../../assets/img/down-arrow.png);
+                    border:0;
+                }
+                .user{
+                    max-width: 40px;
+                    border-radius: 50%;
+                }
+                .comp{
+                    max-width: 20px;
+                    position: absolute;
+                    border-radius: 50;
+                    right: -5px;
+                    top: -5px;
+                }
+                p{
+                    line-height: 1rem;
+                }
+                small{
+                    line-height: 1rem;
+                }
             }
-            .user{
-                max-width: 40px;
-                border-radius: 50%;
+            .dropdown-menu{
+                padding: .5rem .5rem 0 ;
+                background:#f1f2f4;
+                border-radius:0 0 4px 4px;
+                border:0;
+                margin-top: 0;
+                .dropdown-item{
+                    background:#fff;
+                    padding: .5rem;
+                    margin-bottom: .5rem;
+                    border-radius:4px;
+                    img{
+                        width: 16px;
+                        margin-right: .3rem;
+                        vertical-align: middle;
+                    }
+                }
             }
-            .comp{
-                max-width: 20px;
-                position: absolute;
-                border-radius: 50;
-                right: -5px;
-                top: -5px;
-            }
-            p{
-                line-height: 1rem;
-            }
-            small{
-                line-height: 1rem;
+            &.show{
+                .user_data_button{
+                    background:#f1f2f4;
+                }
             }
         }
     }

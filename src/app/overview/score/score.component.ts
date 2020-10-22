@@ -12,22 +12,37 @@ export class ScoreComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+
   }
+  
+
   chartOptions = {
     responsive: true,
-    scaleShowVerticalLines : true,    
+    scaleShowVerticalLines : true,
+    scales: {
+      yAxes: [{
+          ticks: {
+              suggestedMin: 0,
+              suggestedMax: 10,
+              stepSize: 2
+          }
+      }]
+  }    
   };
 
   barchartLend = false;
 
   lineChartData: ChartDataSets[] = [
-    { data: [7,6,7,6], label: ""},
+    { data: [6.5,6,7,6.5], label: ""},
     { data: [8 , 8 , 8 , 8], label: "" },
   ];
+    
+
   chartLabels = ['Cct 20', 'Oct 27', 'Nov 03', 'Nov 10' ];
   lineChartColors = [
     {
-      backgroundImage:  'linear-gradient(to bottom, #f7eeff, #ffffff)',
+      backgroundColor:'#f7eeff',
       borderColor: '#8139c2',
       pointBackgroundColor: '#8139c2',
       pointBorderColor: '#fff',

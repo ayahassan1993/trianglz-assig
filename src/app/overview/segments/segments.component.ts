@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o/public_api';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-drivers',
-  templateUrl: './drivers.component.html',
-  styleUrls: ['./drivers.component.scss']
+  selector: 'app-segments',
+  templateUrl: './segments.component.html',
+  styleUrls: ['./segments.component.scss']
 })
-export class DriversComponent implements OnInit {
+export class SegmentsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
   customOptions: OwlOptions = {
     loop: false,
@@ -28,10 +28,10 @@ export class DriversComponent implements OnInit {
         items: 2
       },
       740: {
-        items: 3
+        items: 2
       },
       940: {
-        items: 4
+        items: 3
       }
     },
     nav: false

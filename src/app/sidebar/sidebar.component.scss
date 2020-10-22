@@ -6,12 +6,22 @@
   img{
     vertical-align: middle;
   }
+  &.active-link{
+    color: #8139c2;
+    background:#fff;
+    padding: .5rem;
+    border-radius:4px;
+  }
 }
 .card{
   border:0;
+  margin-bottom: 1rem;
+  background:transparent;
+  z-index: 1;
   .card-header{
     padding: 0;
     border:0;
+    background:transparent;
     .list-group-item{
         position: relative;
 
@@ -24,4 +34,8 @@
       }
     }
   }
+  .card-body {
+    border-radius: 4px;
+    padding: 1rem 0;
+}
 }

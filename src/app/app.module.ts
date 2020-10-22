@@ -13,7 +13,11 @@ import { BaseChartDirective, ChartsModule, ThemeService } from 'ng2-charts';
 import { ParticipationComponent } from './overview/participation/participation.component';
 import { CommunicationsComponent } from './overview/communications/communications.component';
 import { DriversComponent } from './overview/drivers/drivers.component';
-// import { CarouselModule } from 'angular-owl-carousel2';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { SegmentsComponent } from './overview/segments/segments.component';
+import { CommentsComponent } from './overview/comments/comments.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +29,8 @@ import { DriversComponent } from './overview/drivers/drivers.component';
     ParticipationComponent,
     CommunicationsComponent,
     DriversComponent,
+    SegmentsComponent,
+    CommentsComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +38,7 @@ import { DriversComponent } from './overview/drivers/drivers.component';
     Ng7BootstrapBreadcrumbModule,
     ChartsModule ,
     CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]

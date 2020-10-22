@@ -2,9 +2,9 @@
     <nav class="navbar navbar-expand-lg">
         <div class="nav-logo d-flex alig-items-center">
             <a class="navbar-brand" href="#"><img src="../../assets/img/logo.png" alt="pic"></a>
-            <button class="p-0 ml-2" id="menu-toggle"><img src="../../assets/img/close-menu.png" alt="pic"></button>
+            <button class="p-0 mr-4" id="menu-toggle"><img src="../../assets/img/close-menu.png" alt="pic"></button>
         </div>
-        <div class="dropdown">
+        <div class="dropdown __company_info">
             <button class="company_info text-left d-flex  align-items-center dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="../../assets/img/company-logo.png" alt="pic">
               <div class="ml-3 __info">
@@ -19,19 +19,32 @@
             </div>
         </div>
         <div class="user_info ml-auto d-flex align-items-center">
-            <div class="dropdown mr-3">
-                <button class="notification dropdown-toggle" type="button" id="dropdownNotButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown mr-3 notification">
+                <button class="notification_button dropdown-toggle" type="button" id="dropdownNotButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img src="../../assets/img/notifications.png" alt="pic">
                   <span ></span>
                 </button>
-                <div class="dropdown-menu w-100 animated fadeInUp" aria-labelledby="dropdownNotButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-menu animated fadeInUp dropdown-menu-lg-right" aria-labelledby="dropdownNotButton">
+                  <a class="dropdown-item d-flex" href="#">
+                      <img src="../../assets/img/comments.svg" alt="pic">
+                      <div>
+                          <p class="m-0 font_size_small fontfamily_bold text_gray">New comment - Driver: Growth</p>
+                          <p class="m-0 text_light_gray font_size_small ">14/11 - 5:09pm</p>
+                          <p class="m-0 font_size_small fontfamily_bold">"I'm basically not doing my work for what I think will resonate best with our audie..."</p>
+                        </div>
+                  </a>
+                  <a class="dropdown-item d-flex" href="#">
+                    <img src="../../assets/img/comments.svg" alt="pic">
+                    <div>
+                        <p class="m-0 font_size_small fontfamily_bold text_gray" style="color: #f75656;">New comment - Driver: Growth</p>
+                        <p class="m-0 text_light_gray font_size_small ">14/11 - 5:09pm</p>
+                        <p class="m-0 font_size_small fontfamily_bold">"I'm basically not doing my work for what I think will resonate best with our audie..."</p>
+                      </div>
+                </a>
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="user_data dropdown-toggle d-flex align-items-center" type="button" id="dropdownuserButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown user_data">
+                <button class="user_data_button dropdown-toggle d-flex align-items-center" type="button" id="dropdownuserButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="position-relative">
                         <img class="user" src="../../assets/img/user.jpg" alt="pic">
                         <img class="comp" src="../../assets/img/company-logo.png" alt="pic">
@@ -42,9 +55,8 @@
                     </div>
                 </button>
                 <div class="dropdown-menu w-100 animated fadeInUp" aria-labelledby="dropdownuserButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#"><img src="../../assets/img/profile.svg" alt="pic"> Profile</a>
+                  <a class="dropdown-item" href="#" style="color: #f75656;"><img src="../../assets/img/logout.svg" alt="pic"> Logout</a>
                 </div>
             </div>
         </div>

@@ -1,11 +1,25 @@
 .score_num{
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
     h1{
-        background-image: linear-gradient(to bottom, green, yellowgreen 33%, yellow 66%, gold);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        font-size: 9.5vw;
-        line-height: 14rem;
+        font-size: 9rem;
+        line-height: 9rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .passive , .detractors{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        font-size: 9rem;
+        line-height: 9rem;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        bottom:0;
     }
 
 }

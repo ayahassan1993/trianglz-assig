@@ -5,4 +5,23 @@
     img{
         width: 40px;
     }
+    .btn_style{
+        color: #8139c2;
+        padding: .5rem 1rem;
+        border-radius: 4px;
+        border: solid 1px #e1e5e9;
+        background-color: #ffffff;
+    }
+}
+
+.carousel_item{
+    border-radius: 4px;
+    border: solid 1px #e1e5e9;
+    padding: 1rem;
+    .__img{
+        max-width: 50px;
+    }
+}
+.sec_style{
+    padding-bottom: 2rem;
 }
